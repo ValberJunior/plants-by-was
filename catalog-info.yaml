@@ -4,7 +4,7 @@ metadata:
   name: "Plants by was"
   description: "An example app"
   annotations:
-    github.com/project-slug: ValberJunior/
+    github.com/project-slug: ValberJunior/plants-by-was
     backstage.io/techdocs-ref: dir:.
    
 spec:
