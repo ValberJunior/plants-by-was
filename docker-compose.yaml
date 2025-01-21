@@ -1,0 +1,16 @@
+version: '3'
+#
+# subir banco com init.sql
+#
+services:
+    db:
+        image: mariadb
+        environment:
+            MARIADB_ROOT_PASSWORD: senha
+            MARIADB_DATABASE: plantsdb
+            MARIADB_USER: plants
+            MARIADB_PASSWORD: plants
+        volumes:
+            - ./docker/mariadb/init.sql:/docker-entrypoint-initdb.d/init.sql
+        ports:
+            - "3306:3306"
