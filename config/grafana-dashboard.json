@@ -1,0 +1,17 @@
+{
+  "dashboard": {
+    "title": "Plants by WAS Metrics",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Request Rate",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total[5m])",
+            "legendFormat": "{{method}} {{handler}}"
+          }
+        ]
+      }
+    ]
+  }
+}
